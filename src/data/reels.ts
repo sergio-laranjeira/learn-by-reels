@@ -76,6 +76,25 @@ export const REELS: Reel[] = [
     readSeconds: 10,
     tags: ['channels', 'feedback'],
   },
+  {
+    id: 'communication-8',
+    categoryId: 'communication',
+    kind: 'tip',
+    title: 'Silence is a tool, not a gap to fill',
+    body: 'In a debate-heavy meeting, waiting a beat before responding to a hot take gets you better information than jumping in immediately — and signals you actually heard it.',
+    readSeconds: 10,
+    tags: ['meetings', 'listening'],
+  },
+  {
+    id: 'communication-9',
+    categoryId: 'communication',
+    kind: 'quote',
+    title: "What isn't said",
+    body: "The most important thing in communication is hearing what isn't said.",
+    author: 'Peter Drucker',
+    readSeconds: 8,
+    tags: ['listening'],
+  },
 
   // --- Delegation & Trust ---
   {
@@ -147,6 +166,15 @@ export const REELS: Reel[] = [
     body: "Before asking 'why isn't this done,' ask 'what do you need from me?' Most delegation failures are missing context or a blocked dependency, not a lack of effort.",
     readSeconds: 12,
     tags: ['support', 'blockers'],
+  },
+  {
+    id: 'delegation-8',
+    categoryId: 'delegation',
+    kind: 'challenge',
+    title: 'Write a one-page delegation brief',
+    body: 'For the next thing you hand off, write one page: the goal, the constraints, who has decision rights, and the check-in cadence. No more than that — the rest is theirs to figure out.',
+    readSeconds: 12,
+    tags: ['delegation'],
   },
 
   // --- Decision-Making ---
@@ -221,6 +249,22 @@ export const REELS: Reel[] = [
     readSeconds: 12,
     tags: ['documentation'],
   },
+  {
+    id: 'decisions-8',
+    categoryId: 'decisions',
+    kind: 'question',
+    title: 'No single owner',
+    body: 'A cross-functional project has no single owner, and decisions keep stalling while everyone waits for consensus. What is the fix?',
+    options: [
+      { label: 'Name a single decision-maker for the project, even if others stay consulted or informed', correct: true },
+      { label: 'Escalate every disagreement to leadership' },
+      { label: 'Put every decision to a team vote' },
+      { label: 'Let whoever raises an issue loudest decide it' },
+    ],
+    explanation: 'Shared ownership across a group is usually no ownership at all. A single named decision-maker, with others clearly consulted or informed, is what actually unblocks stalled cross-functional calls.',
+    readSeconds: 18,
+    tags: ['ownership', 'cross-functional'],
+  },
 
   // --- Conflict Resolution ---
   {
@@ -293,6 +337,15 @@ export const REELS: Reel[] = [
     body: 'Most conflict is two reasonable people optimizing for different, unstated goals. Make the goals explicit and the disagreement often resolves itself.',
     readSeconds: 12,
     tags: ['goals'],
+  },
+  {
+    id: 'conflict-8',
+    categoryId: 'conflict',
+    kind: 'tip',
+    title: 'Ask what would change their mind',
+    body: '"What would need to be true for you to see it differently?" turns a positional fight into a search for missing information — and often reveals there was no real disagreement on the facts at all.',
+    readSeconds: 12,
+    tags: ['mediation'],
   },
 
   // --- Hiring & Team Building ---
@@ -367,6 +420,15 @@ export const REELS: Reel[] = [
     readSeconds: 10,
     tags: ['onboarding'],
   },
+  {
+    id: 'hiring-8',
+    categoryId: 'hiring',
+    kind: 'story',
+    title: 'Culture fit vs. culture add',
+    body: 'An interview panel kept passing on strong candidates for not being a "culture fit" — on inspection, the pattern was that everyone already on the team had the same background. Hiring for culture add, not fit, is what actually raises the bar.',
+    readSeconds: 16,
+    tags: ['bias', 'bar-raising'],
+  },
 
   // --- Career Growth & Coaching ---
   {
@@ -439,6 +501,15 @@ export const REELS: Reel[] = [
     body: 'A manager who is the only one who can do a task has not built a team — they have built a bottleneck with a title.',
     readSeconds: 10,
     tags: ['scaling'],
+  },
+  {
+    id: 'growth-8',
+    categoryId: 'growth',
+    kind: 'tip',
+    title: 'Test potential with real stakes',
+    body: 'Before promoting for potential, give a real stretch assignment with real consequences and see how they handle ambiguity — not just how they perform with you supervising closely.',
+    readSeconds: 12,
+    tags: ['promotion'],
   },
 
   // --- Strategic Thinking ---
@@ -513,6 +584,25 @@ export const REELS: Reel[] = [
     readSeconds: 10,
     tags: ['adaptability'],
   },
+  {
+    id: 'strategy-8',
+    categoryId: 'strategy',
+    kind: 'quote',
+    title: 'Choosing what not to do',
+    body: 'The essence of strategy is choosing what not to do.',
+    author: 'Michael Porter',
+    readSeconds: 8,
+    tags: ['focus'],
+  },
+  {
+    id: 'strategy-9',
+    categoryId: 'strategy',
+    kind: 'challenge',
+    title: 'Name one thing to stop',
+    body: 'Write down one thing your team should explicitly stop doing this quarter to make real room for the top priority — not something already dead, something that will actually hurt to cut.',
+    readSeconds: 12,
+    tags: ['focus'],
+  },
 
   // --- Managing Up & Across ---
   {
@@ -585,5 +675,14 @@ export const REELS: Reel[] = [
     body: "Flag a risk before it's confirmed so there are no surprises later. Don't promise a date you're not sure of just to sound confident in the room.",
     readSeconds: 10,
     tags: ['risk'],
+  },
+  {
+    id: 'managing-up-8',
+    categoryId: 'managing-up',
+    kind: 'story',
+    title: 'Silence is not buy-in',
+    body: 'A manager assumed an exec sponsor was fully aligned because they raised no objections in the kickoff — and got blindsided by pushback at the quarterly review. Absence of pushback in a meeting is not confirmation; ask for it explicitly.',
+    readSeconds: 16,
+    tags: ['alignment', 'stakeholders'],
   },
 ];

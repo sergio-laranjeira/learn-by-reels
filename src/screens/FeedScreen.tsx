@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import {
   FlatList,
   View,
@@ -51,11 +51,20 @@ export default function FeedScreen({ categoryId, onClearCategory }: Props) {
     minimumViewTime: 500,
   }).current;
 
+  // markViewed's identity changes whenever progress state updates, but
+  // FlatList requires onViewableItemsChanged to never change identity — so
+  // route through a ref that always points at the latest markViewed instead
+  // of freezing the closure over whatever state existed on first render.
+  const markViewedRef = useRef(markViewed);
+  useEffect(() => {
+    markViewedRef.current = markViewed;
+  }, [markViewed]);
+
   const onViewableItemsChanged = useRef(
     ({ viewableItems }: { viewableItems: ViewToken[] }) => {
       const visible = viewableItems.find((v) => v.isViewable);
       if (visible?.item) {
-        markViewed((visible.item as FeedItem).reel.id);
+        markViewedRef.current((visible.item as FeedItem).reel.id);
       }
     },
   ).current;

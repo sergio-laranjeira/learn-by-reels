@@ -37,6 +37,30 @@ npm install
 npm run start   # then press i / a / w, or scan the QR code with Expo Go
 ```
 
+## Web build & GitHub Pages
+
+The app also exports to a static website via `react-native-web`, deployed by
+`.github/workflows/deploy-pages.yml` on every push to `main`.
+
+One-time setup: in the repo's **Settings → Pages**, set **Source** to
+**GitHub Actions**. After that, pushing to `main` builds and publishes
+automatically to `https://<user>.github.io/learn-by-reels/`.
+
+Since a GitHub Pages project site is served from a `/learn-by-reels/`
+subpath rather than the domain root, the web export needs a base path baked
+in — that's what `GH_PAGES_BASE_PATH` does in `app.config.js` (only applied
+when the env var is set, so local dev and native builds are unaffected). To
+reproduce the production build locally:
+
+```
+GH_PAGES_BASE_PATH=/learn-by-reels npx expo export --platform web --output-dir dist
+```
+
+Note: the reel-swipe feed uses native paging (`FlatList` + `pagingEnabled`),
+which `react-native-web` maps to CSS scroll-snap — full-screen cards still
+snap cleanly on mouse-wheel/trackpad scroll, just without the touch-swipe
+feel of the native app.
+
 ## Project structure
 
 ```
