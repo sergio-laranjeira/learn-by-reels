@@ -13,15 +13,11 @@ module.exports = {
     userInterfaceStyle: 'dark',
     scheme: 'learnbyreels',
     ios: {
-      // PLACEHOLDER — must be a bundle ID registered under your own Apple
-      // Developer account before a real build/submission (see README).
-      bundleIdentifier: 'com.learnbyreels.app',
+      bundleIdentifier: 'pt.laranjeira.learnbyreels',
       supportsTablet: true,
     },
     android: {
-      // PLACEHOLDER — must be a package name you own before a real
-      // build/submission (see README); Google Play does not allow reuse.
-      package: 'com.learnbyreels.app',
+      package: 'pt.laranjeira.learnbyreels',
       adaptiveIcon: {
         backgroundColor: '#0E0E12',
         foregroundImage: './assets/android-icon-foreground.png',

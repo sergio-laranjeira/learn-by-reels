@@ -74,10 +74,8 @@ desktop rides on the same web build as an installable PWA instead.
 
 ### iOS and Android (native)
 
-`app.config.js` has placeholder `ios.bundleIdentifier` /
-`android.package` values (`com.learnbyreels.app`) — replace them with an
-identifier you actually own before building, since app stores don't allow
-reusing one across accounts. `eas.json` has `development` / `preview` /
+`app.config.js` sets `ios.bundleIdentifier` / `android.package` to
+`pt.laranjeira.learnbyreels`. `eas.json` has `development` / `preview` /
 `production` build profiles already set up. Once you've run `eas login` with
 your own Expo account:
 
