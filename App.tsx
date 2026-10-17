@@ -5,6 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ProgressProvider } from './src/state/progress';
 import FeedScreen from './src/screens/FeedScreen';
 import CategoriesScreen from './src/screens/CategoriesScreen';
+import CollectionScreen from './src/screens/CollectionScreen';
 import ProgressScreen from './src/screens/ProgressScreen';
 import TabBar, { TabKey } from './src/components/TabBar';
 
@@ -35,6 +36,7 @@ export default function App() {
                 }}
               />
             ) : null}
+            {activeTab === 'collection' ? <CollectionScreen /> : null}
             {activeTab === 'progress' ? <ProgressScreen /> : null}
           </View>
           <TabBar active={activeTab} onChange={setActiveTab} overlay={activeTab === 'feed'} />

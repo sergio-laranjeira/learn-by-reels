@@ -3,11 +3,12 @@ import { View, Pressable, Text, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 
-export type TabKey = 'feed' | 'categories' | 'progress';
+export type TabKey = 'feed' | 'categories' | 'collection' | 'progress';
 
 const TABS: { key: TabKey; label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
   { key: 'feed', label: 'For You', icon: 'play-circle-outline' },
   { key: 'categories', label: 'Topics', icon: 'grid-outline' },
+  { key: 'collection', label: 'Collection', icon: 'albums-outline' },
   { key: 'progress', label: 'Progress', icon: 'bar-chart-outline' },
 ];
 

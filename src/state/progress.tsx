@@ -18,6 +18,7 @@ interface PersistedState {
   streak: number;
   longestStreak: number;
   lastCompletedDateKey: string | null;
+  collectedReelIds: string[];
 }
 
 const EMPTY_STATE: PersistedState = {
@@ -25,6 +26,7 @@ const EMPTY_STATE: PersistedState = {
   streak: 0,
   longestStreak: 0,
   lastCompletedDateKey: null,
+  collectedReelIds: [],
 };
 
 function pruneOldDays(dailyViewed: Record<string, string[]>): Record<string, string[]> {
@@ -47,6 +49,8 @@ interface ProgressContextValue {
   last7Days: { key: string; count: number }[];
   isViewedToday: (reelId: string) => boolean;
   markViewed: (reelId: string) => void;
+  isCollected: (reelId: string) => boolean;
+  totalCollected: number;
 }
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
@@ -62,8 +66,18 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       .then((raw) => {
         if (cancelled) return;
         if (raw) {
-          const parsed = JSON.parse(raw) as PersistedState;
-          setState({ ...EMPTY_STATE, ...parsed });
+          const parsed = JSON.parse(raw) as Partial<PersistedState>;
+          const merged = { ...EMPTY_STATE, ...parsed };
+          // Back-fill collection history for anyone who viewed reels before
+          // the collection feature existed, so they don't lose that progress.
+          if (!parsed.collectedReelIds) {
+            const everViewed = new Set<string>();
+            for (const ids of Object.values(merged.dailyViewed)) {
+              ids.forEach((id) => everViewed.add(id));
+            }
+            merged.collectedReelIds = Array.from(everViewed);
+          }
+          setState(merged);
         }
       })
       .catch(() => {
@@ -116,11 +130,16 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
         }
       }
 
+      const collectedReelIds = state.collectedReelIds.includes(reelId)
+        ? state.collectedReelIds
+        : [...state.collectedReelIds, reelId];
+
       persist({
         dailyViewed: nextDailyViewed,
         streak,
         longestStreak,
         lastCompletedDateKey,
+        collectedReelIds,
       });
     },
     [state, today, persist],
@@ -148,6 +167,12 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
 
   const todayCount = state.dailyViewed[today]?.length ?? 0;
 
+  const collectedSet = useMemo(
+    () => new Set(state.collectedReelIds),
+    [state.collectedReelIds],
+  );
+  const isCollected = useCallback((reelId: string) => collectedSet.has(reelId), [collectedSet]);
+
   const value: ProgressContextValue = {
     loading,
     dailyGoal: DAILY_GOAL,
@@ -159,6 +184,8 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     last7Days,
     isViewedToday,
     markViewed,
+    isCollected,
+    totalCollected: state.collectedReelIds.length,
   };
 
   return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;

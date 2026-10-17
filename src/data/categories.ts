@@ -70,3 +70,8 @@ export const CATEGORIES: Category[] = [
 export const CATEGORY_MAP: Record<string, Category> = Object.fromEntries(
   CATEGORIES.map((c) => [c.id, c]),
 );
+
+// Each category is a card collection with a fixed target size. Content is
+// filled in progressively — see getReelsForCategory().length for how many of
+// the 100 slots are currently authored.
+export const COLLECTION_CAPACITY = 100;

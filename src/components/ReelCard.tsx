@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Pressable, useWindowDimensions } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
-import { Category, Reel } from '../types/content';
+import { Category, Reel, Rarity, getRarity } from '../types/content';
+import { useProgress } from '../state/progress';
 
 const KIND_LABEL: Record<Reel['kind'], string> = {
   tip: 'Tip',
@@ -20,6 +21,20 @@ const KIND_ICON: Record<Reel['kind'], keyof typeof Ionicons.glyphMap> = {
   challenge: 'flash-outline',
 };
 
+const RARITY_LABEL: Record<Rarity, string> = {
+  common: 'Common',
+  uncommon: 'Uncommon',
+  rare: 'Rare',
+  legendary: 'Legendary',
+};
+
+const RARITY_COLOR: Record<Rarity, string> = {
+  common: '#C8CCD4',
+  uncommon: '#4ADE80',
+  rare: '#60A5FA',
+  legendary: '#FBBF24',
+};
+
 interface Props {
   reel: Reel;
   category: Category;
@@ -29,6 +44,11 @@ interface Props {
 export default function ReelCard({ reel, category, showSwipeHint }: Props) {
   const { height, width } = useWindowDimensions();
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const { isCollected } = useProgress();
+  // Captured once per mount (one mount per feed slot) so the "new card"
+  // ribbon doesn't vanish mid-read the instant viewability marks it collected.
+  const [isNewCard] = useState(() => !isCollected(reel.id));
+  const rarity = getRarity(reel.kind);
 
   return (
     <View style={{ height, width }}>
@@ -38,16 +58,23 @@ export default function ReelCard({ reel, category, showSwipeHint }: Props) {
         end={{ x: 1, y: 1 }}
         style={styles.gradient}
       >
+        {isNewCard ? (
+          <View style={styles.newBadge}>
+            <Text style={styles.newBadgeText}>NEW CARD</Text>
+          </View>
+        ) : null}
         <View style={styles.headerRow}>
           <View style={styles.categoryPill}>
             <Ionicons name={category.icon} size={14} color="#fff" />
             <Text style={styles.categoryPillText}>{category.name}</Text>
           </View>
           <View style={styles.kindPill}>
+            <View style={[styles.rarityDot, { backgroundColor: RARITY_COLOR[rarity] }]} />
             <Ionicons name={KIND_ICON[reel.kind]} size={13} color="#fff" />
             <Text style={styles.kindPillText}>{KIND_LABEL[reel.kind]}</Text>
           </View>
         </View>
+        <Text style={styles.rarityLabel}>{RARITY_LABEL[rarity]} card</Text>
 
         <View style={styles.body}>
           {reel.kind === 'quote' ? (
@@ -117,6 +144,37 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 24,
     justifyContent: 'space-between',
+  },
+  newBadge: {
+    // Sits below the header row (which starts at paddingTop: 64) and the
+    // global DailyProgressBar overlay rendered above every card, so it never
+    // collides with either.
+    position: 'absolute',
+    top: 112,
+    left: 24,
+    backgroundColor: '#FBBF24',
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    zIndex: 1,
+  },
+  newBadgeText: {
+    color: '#1C1C24',
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  rarityDot: {
+    width: 7,
+    height: 7,
+    borderRadius: 4,
+  },
+  rarityLabel: {
+    alignSelf: 'flex-end',
+    color: 'rgba(255,255,255,0.55)',
+    fontSize: 11,
+    fontWeight: '600',
+    marginTop: 4,
   },
   headerRow: {
     flexDirection: 'row',
