@@ -56,6 +56,50 @@ worth the complexity of lazy/remote loading yet. If any one collection grows
 large enough for that to matter, `contentSource.ts` is the only place that
 would need to change to fetch it instead of importing it.
 
+## Platform coverage
+
+One codebase, five targets:
+
+| Platform | How | Status |
+| --- | --- | --- |
+| iOS | Native build via EAS Build | config ready, needs your Apple Developer account |
+| Android | Native build via EAS Build | config ready, needs your Google Play account |
+| iPadOS | Same iOS build (`ios.supportsTablet`) | free with the iOS build |
+| Web | Static export via `react-native-web` | live — see GitHub Pages below |
+| Mac / Windows / Linux desktop | Installable PWA (same web build) | live — see PWA below |
+
+No separate desktop codebase (React Native macOS/Windows) and no Electron/Tauri
+wrapper — this app has no native OS integration need to justify either, so
+desktop rides on the same web build as an installable PWA instead.
+
+### iOS and Android (native)
+
+`app.config.js` has placeholder `ios.bundleIdentifier` /
+`android.package` values (`com.learnbyreels.app`) — replace them with an
+identifier you actually own before building, since app stores don't allow
+reusing one across accounts. `eas.json` has `development` / `preview` /
+`production` build profiles already set up. Once you've run `eas login` with
+your own Expo account:
+
+```
+npx eas build --platform ios --profile preview       # or production
+npx eas build --platform android --profile preview   # or production
+```
+
+This requires an Expo account (free) and, for store submission, an Apple
+Developer Program membership ($99/yr) and a Google Play Developer account
+($25 one-time) — EAS Build can produce installable builds without either for
+internal/preview distribution, but App Store/Play Store submission needs them.
+
+### Installable desktop app (PWA)
+
+The web build is a real installable Progressive Web App — manifest, icons,
+and a service worker live under `public/`. On Mac, Windows, or Linux, open
+the deployed site in Chrome or Edge and use "Install app" (or the install
+icon in the address bar) to get a windowed, dock/taskbar-pinned app with no
+separate download or packaging step. The same install flow works on mobile
+Chrome/Safari for a home-screen app shortcut.
+
 ## Running the app
 
 ```
@@ -85,7 +129,9 @@ GH_PAGES_BASE_PATH=/learn-by-reels npx expo export --platform web --output-dir d
 Note: the reel-swipe feed uses native paging (`FlatList` + `pagingEnabled`),
 which `react-native-web` maps to CSS scroll-snap — full-screen cards still
 snap cleanly on mouse-wheel/trackpad scroll, just without the touch-swipe
-feel of the native app.
+feel of the native app. Above 480px wide, the whole app renders as a
+centered, phone-proportioned column (`src/utils/layout.ts`) rather than
+stretching full-bleed cards and text across a desktop monitor.
 
 ## Downloading a collection
 
@@ -101,7 +147,14 @@ file-system/sharing modules.
 ## Project structure
 
 ```
-App.tsx                     # tab navigation shell
+App.tsx                     # tab navigation shell + desktop/web max-width centering
+app.config.js                # name, icons, bundle IDs, GH Pages base path
+eas.json                      # EAS Build profiles for iOS/Android
+public/                       # PWA assets, copied as-is into the web export
+  index.html                   # custom template: manifest link, SW registration
+  manifest.webmanifest          # installable-app metadata
+  service-worker.js             # minimal offline/installability service worker
+  icons/                        # PWA icon sizes (192/512/512-maskable/180)
 src/
   types/content.ts          # Category / Reel shapes, rarity derivation
   data/
@@ -121,6 +174,7 @@ src/
     ProgressScreen.tsx         # streak + history
   utils/
     date.ts, shuffle.ts        # date-key helpers, seeded daily shuffle
+    layout.ts                   # desktop/web max-content-width clamp
     collectionExport.ts         # shared JSON export payload shape
     downloadCollection(.web).ts # platform-specific download/share
 ```

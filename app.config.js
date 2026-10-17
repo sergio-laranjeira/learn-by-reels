@@ -5,18 +5,25 @@ const basePath = process.env.GH_PAGES_BASE_PATH;
 
 module.exports = {
   expo: {
-    name: 'learn-by-reels',
+    name: 'Learn by Reels',
     slug: 'learn-by-reels',
     version: '1.0.0',
     orientation: 'portrait',
     icon: './assets/icon.png',
-    userInterfaceStyle: 'light',
+    userInterfaceStyle: 'dark',
+    scheme: 'learnbyreels',
     ios: {
+      // PLACEHOLDER — must be a bundle ID registered under your own Apple
+      // Developer account before a real build/submission (see README).
+      bundleIdentifier: 'com.learnbyreels.app',
       supportsTablet: true,
     },
     android: {
+      // PLACEHOLDER — must be a package name you own before a real
+      // build/submission (see README); Google Play does not allow reuse.
+      package: 'com.learnbyreels.app',
       adaptiveIcon: {
-        backgroundColor: '#E6F4FE',
+        backgroundColor: '#0E0E12',
         foregroundImage: './assets/android-icon-foreground.png',
         backgroundImage: './assets/android-icon-background.png',
         monochromeImage: './assets/android-icon-monochrome.png',
@@ -25,6 +32,9 @@ module.exports = {
     },
     web: {
       favicon: './assets/favicon.png',
+      themeColor: '#0E0E12',
+      description:
+        'Micro-learning reels for technical leadership — swipe through tips, quotes, and quick checks, and collect every card in a set.',
     },
     ...(basePath ? { experiments: { baseUrl: basePath } } : {}),
   },

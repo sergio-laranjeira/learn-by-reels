@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Pressable, useWindowDimensions } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { Category, Reel, Rarity, getRarity } from '../types/content';
 import { useProgress } from '../state/progress';
+import { useAppDimensions } from '../utils/layout';
 
 const KIND_LABEL: Record<Reel['kind'], string> = {
   tip: 'Tip',
@@ -42,7 +43,7 @@ interface Props {
 }
 
 export default function ReelCard({ reel, category, showSwipeHint }: Props) {
-  const { height, width } = useWindowDimensions();
+  const { height, width } = useAppDimensions();
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const { isCollected } = useProgress();
   // Captured once per mount (one mount per feed slot) so the "new card"

@@ -8,6 +8,7 @@ import CategoriesScreen from './src/screens/CategoriesScreen';
 import CollectionScreen from './src/screens/CollectionScreen';
 import ProgressScreen from './src/screens/ProgressScreen';
 import TabBar, { TabKey } from './src/components/TabBar';
+import { MAX_CONTENT_WIDTH } from './src/utils/layout';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabKey>('feed');
@@ -16,30 +17,32 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <ProgressProvider>
-        <View style={styles.container}>
-          <View style={styles.screen}>
-            {activeTab === 'feed' ? (
-              <FeedScreen
-                categoryId={selectedCategory}
-                onClearCategory={() => setSelectedCategory(null)}
-              />
-            ) : null}
-            {activeTab === 'categories' ? (
-              <CategoriesScreen
-                onSelectCategory={(id) => {
-                  setSelectedCategory(id);
-                  setActiveTab('feed');
-                }}
-                onSelectAll={() => {
-                  setSelectedCategory(null);
-                  setActiveTab('feed');
-                }}
-              />
-            ) : null}
-            {activeTab === 'collection' ? <CollectionScreen /> : null}
-            {activeTab === 'progress' ? <ProgressScreen /> : null}
+        <View style={styles.outer}>
+          <View style={styles.container}>
+            <View style={styles.screen}>
+              {activeTab === 'feed' ? (
+                <FeedScreen
+                  categoryId={selectedCategory}
+                  onClearCategory={() => setSelectedCategory(null)}
+                />
+              ) : null}
+              {activeTab === 'categories' ? (
+                <CategoriesScreen
+                  onSelectCategory={(id) => {
+                    setSelectedCategory(id);
+                    setActiveTab('feed');
+                  }}
+                  onSelectAll={() => {
+                    setSelectedCategory(null);
+                    setActiveTab('feed');
+                  }}
+                />
+              ) : null}
+              {activeTab === 'collection' ? <CollectionScreen /> : null}
+              {activeTab === 'progress' ? <ProgressScreen /> : null}
+            </View>
+            <TabBar active={activeTab} onChange={setActiveTab} overlay={activeTab === 'feed'} />
           </View>
-          <TabBar active={activeTab} onChange={setActiveTab} overlay={activeTab === 'feed'} />
           <StatusBar style="light" />
         </View>
       </ProgressProvider>
@@ -48,8 +51,17 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  // On a wide (desktop/web) viewport the app renders as a centered,
+  // phone-proportioned column instead of full-bleed — see src/utils/layout.ts.
+  outer: {
+    flex: 1,
+    backgroundColor: '#0E0E12',
+    alignItems: 'center',
+  },
   container: {
     flex: 1,
+    width: '100%',
+    maxWidth: MAX_CONTENT_WIDTH,
     backgroundColor: '#000',
   },
   screen: {
