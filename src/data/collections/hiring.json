@@ -1,0 +1,201 @@
+[
+  {
+    "id": "hiring-1",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "Hire for trajectory, not just résumé",
+    "body": "How much someone has grown across their last two roles predicts more about their future than their current title does.",
+    "readSeconds": 10,
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "id": "hiring-2",
+    "categoryId": "hiring",
+    "kind": "quote",
+    "title": "A players and C players",
+    "body": "A players hire A players; B players hire C players.",
+    "author": "Steve Jobs",
+    "readSeconds": 8,
+    "tags": [
+      "bar-raising"
+    ]
+  },
+  {
+    "id": "hiring-3",
+    "categoryId": "hiring",
+    "kind": "question",
+    "title": "Generalist vs. specialist",
+    "body": "Final round: a strong generalist who'd need ramp time, versus a deep specialist who has plateaued in past roles. Which matters more?",
+    "options": [
+      {
+        "label": "Immediate skill match, always"
+      },
+      {
+        "label": "Depends whether you are hiring for the next 6 months or the next 3 years — decide that first",
+        "correct": true
+      },
+      {
+        "label": "The generalist, always"
+      },
+      {
+        "label": "Whoever interviews better"
+      }
+    ],
+    "explanation": "The right answer is entirely dependent on time horizon. Deciding what you are actually hiring for should come before comparing candidates against it.",
+    "readSeconds": 18,
+    "tags": [
+      "hiring decisions"
+    ]
+  },
+  {
+    "id": "hiring-4",
+    "categoryId": "hiring",
+    "kind": "story",
+    "title": "Lowering the bar under pressure",
+    "body": "A team lowered its hiring bar to hit a headcount target for the quarter. It spent the next eighteen months managing out that hire and rebuilding the team's trust in the process. A bad hire costs far more than an open seat costs in velocity.",
+    "readSeconds": 18,
+    "tags": [
+      "bar-raising"
+    ]
+  },
+  {
+    "id": "hiring-5",
+    "categoryId": "hiring",
+    "kind": "challenge",
+    "title": "Name your one non-negotiable",
+    "body": "Write down, in one sentence, the single non-negotiable trait for your next open role. If you can't name one, you don't have a bar yet.",
+    "readSeconds": 10,
+    "tags": [
+      "bar-raising"
+    ]
+  },
+  {
+    "id": "hiring-6",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "Ask references for a story, not a rating",
+    "body": "\"Tell me about a time they had to deliver bad news\" surfaces more than \"would you rate them 8 out of 10?\" ever will.",
+    "readSeconds": 10,
+    "tags": [
+      "references"
+    ]
+  },
+  {
+    "id": "hiring-7",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "Design the first 30 days before day one",
+    "body": "The highest-leverage retention lever is not compensation — it is whether a new hire gets a clear, visible win in their first month.",
+    "readSeconds": 10,
+    "tags": [
+      "onboarding"
+    ]
+  },
+  {
+    "id": "hiring-8",
+    "categoryId": "hiring",
+    "kind": "story",
+    "title": "Culture fit vs. culture add",
+    "body": "An interview panel kept passing on strong candidates for not being a \"culture fit\" — on inspection, the pattern was that everyone already on the team had the same background. Hiring for culture add, not fit, is what actually raises the bar.",
+    "readSeconds": 16,
+    "tags": [
+      "bias",
+      "bar-raising"
+    ]
+  },
+  {
+    "id": "hiring-9",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "Write the scorecard before the first interview",
+    "body": "Decide what \"great\" looks like for the role, in writing, before meeting anyone. Otherwise the first strong personality you meet quietly becomes the bar.",
+    "readSeconds": 10,
+    "tags": [
+      "bar-raising"
+    ]
+  },
+  {
+    "id": "hiring-10",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "A rejected candidate is a future referral",
+    "body": "How you close out a \"no\" shapes whether that person ever applies again — or recommends someone else who should.",
+    "readSeconds": 10,
+    "tags": [
+      "candidate experience"
+    ]
+  },
+  {
+    "id": "hiring-11",
+    "categoryId": "hiring",
+    "kind": "story",
+    "title": "The loop that waited for one more signal",
+    "body": "A hiring loop kept extending because every interviewer wanted \"one more signal\" before deciding. Six weeks later, the strongest candidate had accepted another offer. Indecision has a cost measured in candidates, not just time.",
+    "readSeconds": 16,
+    "tags": [
+      "speed"
+    ]
+  },
+  {
+    "id": "hiring-12",
+    "categoryId": "hiring",
+    "kind": "challenge",
+    "title": "Write your assessment before anyone else speaks",
+    "body": "Debrief your next interview loop by writing your own assessment before hearing anyone else's. If you always agree with whoever speaks first, you don't have independent signal.",
+    "readSeconds": 10,
+    "tags": [
+      "bias"
+    ]
+  },
+  {
+    "id": "hiring-13",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "Interview for the failure mode, not just the strength",
+    "body": "Ask what happens when this person is stressed, wrong, or under-resourced. The strength already sold you — the failure mode is what you will actually manage.",
+    "readSeconds": 10,
+    "tags": [
+      "interviewing"
+    ]
+  },
+  {
+    "id": "hiring-14",
+    "categoryId": "hiring",
+    "kind": "question",
+    "title": "They remind me of myself",
+    "body": "An interviewer wants to hire a candidate mainly because they remind the interviewer of themselves early in their career. What is the risk?",
+    "options": [
+      {
+        "label": "None — similarity is a reasonable predictor of success"
+      },
+      {
+        "label": "Affinity bias — treating \"familiar\" as a proxy for \"qualified\"",
+        "correct": true
+      },
+      {
+        "label": "The candidate is probably overqualified for the role"
+      },
+      {
+        "label": "There is no risk if the candidate also passed the technical bar"
+      }
+    ],
+    "explanation": "Affinity bias is one of the most common ways a hiring bar quietly erodes. \"Reminds me of me\" is not a scorecard criterion, however technically strong the candidate also is.",
+    "readSeconds": 18,
+    "tags": [
+      "bias"
+    ]
+  },
+  {
+    "id": "hiring-15",
+    "categoryId": "hiring",
+    "kind": "tip",
+    "title": "A work sample beats a conversation",
+    "body": "Wherever possible, see the candidate do a scaled-down version of the actual job. It beats any amount of talking about how they would do it.",
+    "readSeconds": 10,
+    "tags": [
+      "interviewing"
+    ]
+  }
+]

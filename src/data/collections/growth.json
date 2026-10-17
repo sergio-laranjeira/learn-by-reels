@@ -1,0 +1,201 @@
+[
+  {
+    "id": "growth-1",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Coach for the next level, not just this one",
+    "body": "If you only give feedback on today's job, you are preparing people to stay exactly where they are.",
+    "readSeconds": 10,
+    "tags": [
+      "coaching"
+    ]
+  },
+  {
+    "id": "growth-2",
+    "categoryId": "growth",
+    "kind": "quote",
+    "title": "Growing yourself, then others",
+    "body": "Before you are a leader, success is all about growing yourself. When you become a leader, success is all about growing others.",
+    "author": "Jack Welch",
+    "readSeconds": 10,
+    "tags": [
+      "leadership"
+    ]
+  },
+  {
+    "id": "growth-3",
+    "categoryId": "growth",
+    "kind": "question",
+    "title": "First-time manager readiness",
+    "body": "A strong individual contributor wants to move into management but has never led anyone. What is the best next step?",
+    "options": [
+      {
+        "label": "Promote them into a team lead role immediately"
+      },
+      {
+        "label": "Give them a bounded leadership rep first — leading a project, onboarding a hire — then debrief it together",
+        "correct": true
+      },
+      {
+        "label": "Tell them to wait for a formal opening"
+      },
+      {
+        "label": "Send them to a management training course"
+      }
+    ],
+    "explanation": "A bounded rep with a real debrief tests the aptitude and builds the skill before the stakes (and the org chart) are permanent.",
+    "readSeconds": 18,
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "growth-4",
+    "categoryId": "growth",
+    "kind": "story",
+    "title": "Promoted for tenure",
+    "body": "A high performer was promoted to manager purely for seniority, having never led anyone. Six months later the team was worse off, and the company had lost a strong individual contributor while gaining a struggling manager. Management is a different job, not a reward for doing the old one well.",
+    "readSeconds": 18,
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "growth-5",
+    "categoryId": "growth",
+    "kind": "challenge",
+    "title": "Ask about two years from now",
+    "body": "In your next 1:1, ask: 'what skill do you want to be known for in two years?' Write down the answer and revisit it in 90 days.",
+    "readSeconds": 10,
+    "tags": [
+      "1:1s"
+    ]
+  },
+  {
+    "id": "growth-6",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Give feedback within 48 hours",
+    "body": "The further feedback drifts from the moment, the less specific and less useful it becomes — for praise and for correction alike.",
+    "readSeconds": 10,
+    "tags": [
+      "feedback",
+      "timing"
+    ]
+  },
+  {
+    "id": "growth-7",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Your job is to make yourself replaceable",
+    "body": "A manager who is the only one who can do a task has not built a team — they have built a bottleneck with a title.",
+    "readSeconds": 10,
+    "tags": [
+      "scaling"
+    ]
+  },
+  {
+    "id": "growth-8",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Test potential with real stakes",
+    "body": "Before promoting for potential, give a real stretch assignment with real consequences and see how they handle ambiguity — not just how they perform with you supervising closely.",
+    "readSeconds": 12,
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "growth-9",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Praise the decision, not just the outcome",
+    "body": "A good decision that did not work out still deserves recognition — otherwise people learn to optimize for safe bets instead of good judgment.",
+    "readSeconds": 10,
+    "tags": [
+      "coaching"
+    ]
+  },
+  {
+    "id": "growth-10",
+    "categoryId": "growth",
+    "kind": "story",
+    "title": "The promotion that never came because no one asked",
+    "body": "A talented engineer kept getting passed over for promotion because their manager assumed they weren't interested in management. Nobody had ever actually asked. Ambition changes — don't guess at it, ask directly and often.",
+    "readSeconds": 16,
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "growth-11",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Separate \"ready for more scope\" from \"ready for the title\"",
+    "body": "Scope can expand gradually. Titles tend to be binary and political. Give the scope first, and let the title catch up once the case is undeniable.",
+    "readSeconds": 10,
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "growth-12",
+    "categoryId": "growth",
+    "kind": "challenge",
+    "title": "Tell them you'd hate to lose them",
+    "body": "Write down, honestly, who on your team you'd be most afraid to lose. Then ask yourself when you last actually told them that.",
+    "readSeconds": 10,
+    "tags": [
+      "retention"
+    ]
+  },
+  {
+    "id": "growth-13",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "A growth plan without a deadline is a wish",
+    "body": "\"Get better at X\" is not a plan. \"Lead the migration project by Q2, debrief after\" is.",
+    "readSeconds": 10,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "growth-14",
+    "categoryId": "growth",
+    "kind": "question",
+    "title": "Excellent work, silent in the room",
+    "body": "A report consistently delivers excellent work but never speaks up in group settings. What is the highest-leverage move?",
+    "options": [
+      {
+        "label": "Mark them down on \"communication\" in the performance review"
+      },
+      {
+        "label": "Create lower-stakes settings for them to practice speaking up, and coach it as a learnable skill",
+        "correct": true
+      },
+      {
+        "label": "Assume they are not leadership material"
+      },
+      {
+        "label": "Speak for them in meetings so their ideas still get heard"
+      }
+    ],
+    "explanation": "Treating quietness as a fixed trait writes someone off. Treating it as a learnable skill, practiced in lower-stakes settings first, is both kinder and usually more accurate.",
+    "readSeconds": 18,
+    "tags": [
+      "coaching"
+    ]
+  },
+  {
+    "id": "growth-15",
+    "categoryId": "growth",
+    "kind": "tip",
+    "title": "Your best people leave the way they stay — on purpose",
+    "body": "Regularly ask high performers what would make them consider leaving. Waiting for the resignation letter to ask is already too late.",
+    "readSeconds": 10,
+    "tags": [
+      "retention"
+    ]
+  }
+]

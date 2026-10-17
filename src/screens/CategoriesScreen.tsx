@@ -3,14 +3,28 @@ import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { getCategories, getReelsForCategory } from '../data/contentSource';
+import { Category, CategoryGroup } from '../types/content';
 
 interface Props {
   onSelectCategory: (categoryId: string) => void;
   onSelectAll: () => void;
 }
 
+const SECTION_TITLE: Record<CategoryGroup, string> = {
+  topic: 'By topic',
+  format: 'By format',
+  internal: 'From Doctolib',
+};
+
+const SECTION_SUBTITLE: Record<CategoryGroup, string> = {
+  topic: 'Technical leadership, broken into focus areas.',
+  format: 'The same skills, pulled from books, talks, courses, forums, and the news.',
+  internal: "Added directly by Doctolib's own leadership.",
+};
+
 export default function CategoriesScreen({ onSelectCategory, onSelectAll }: Props) {
   const categories = getCategories();
+  const groups: CategoryGroup[] = ['topic', 'format', 'internal'];
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -21,30 +35,48 @@ export default function CategoriesScreen({ onSelectCategory, onSelectAll }: Prop
         <Pressable style={[styles.card, styles.allCard]} onPress={onSelectAll}>
           <Ionicons name="sparkles-outline" size={22} color="#fff" />
           <Text style={styles.cardTitle}>For You</Text>
-          <Text style={styles.cardDescription}>A mixed feed across every topic</Text>
+          <Text style={styles.cardDescription}>A mixed feed across every collection</Text>
         </Pressable>
 
-        <View style={styles.grid}>
-          {categories.map((category) => {
-            const count = getReelsForCategory(category.id).length;
-            return (
-              <Pressable
-                key={category.id}
-                style={[styles.card, styles.gridCard, { backgroundColor: category.color }]}
-                onPress={() => onSelectCategory(category.id)}
-              >
-                <Ionicons name={category.icon} size={22} color="#fff" />
-                <Text style={styles.cardTitle}>{category.name}</Text>
-                <Text style={styles.cardDescription} numberOfLines={3}>
-                  {category.description}
-                </Text>
-                <Text style={styles.cardCount}>{count} reels</Text>
-              </Pressable>
-            );
-          })}
-        </View>
+        {groups.map((group) => {
+          const groupCategories = categories.filter((c) => c.group === group);
+          if (groupCategories.length === 0) return null;
+          return (
+            <View key={group} style={styles.section}>
+              <Text style={styles.sectionTitle}>{SECTION_TITLE[group]}</Text>
+              <Text style={styles.sectionSubtitle}>{SECTION_SUBTITLE[group]}</Text>
+              <View style={styles.grid}>
+                {groupCategories.map((category) => (
+                  <CategoryCard
+                    key={category.id}
+                    category={category}
+                    onPress={() => onSelectCategory(category.id)}
+                  />
+                ))}
+              </View>
+            </View>
+          );
+        })}
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+function CategoryCard({ category, onPress }: { category: Category; onPress: () => void }) {
+  const count = getReelsForCategory(category.id).length;
+  const isEmpty = count === 0;
+  return (
+    <Pressable
+      style={[styles.card, styles.gridCard, { backgroundColor: category.color }, isEmpty && styles.gridCardEmpty]}
+      onPress={onPress}
+    >
+      <Ionicons name={category.icon} size={22} color="#fff" />
+      <Text style={styles.cardTitle}>{category.name}</Text>
+      <Text style={styles.cardDescription} numberOfLines={3}>
+        {category.description}
+      </Text>
+      <Text style={styles.cardCount}>{isEmpty ? 'Coming soon' : `${count} cards`}</Text>
+    </Pressable>
   );
 }
 
@@ -79,6 +111,21 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.12)',
   },
+  section: {
+    marginTop: 8,
+    marginBottom: 12,
+  },
+  sectionTitle: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  sectionSubtitle: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 12,
+    marginTop: 2,
+    marginBottom: 12,
+  },
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -88,6 +135,9 @@ const styles = StyleSheet.create({
     width: '47%',
     minHeight: 150,
     justifyContent: 'space-between',
+  },
+  gridCardEmpty: {
+    opacity: 0.55,
   },
   cardTitle: {
     color: '#fff',

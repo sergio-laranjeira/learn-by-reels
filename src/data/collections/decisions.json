@@ -1,0 +1,220 @@
+[
+  {
+    "id": "decisions-1",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "One-way doors vs. two-way doors",
+    "body": "Some decisions are one-way doors: hard to reverse, worth deliberating widely. Most are two-way doors: cheap to undo, best made fast by whoever is closest to the problem. Most teams slow down two-way doors as if they were one-way.",
+    "readSeconds": 16,
+    "tags": [
+      "speed",
+      "jeff bezos"
+    ]
+  },
+  {
+    "id": "decisions-2",
+    "categoryId": "decisions",
+    "kind": "quote",
+    "title": "Disagree and commit",
+    "body": "Disagree and commit.",
+    "author": "Jeff Bezos",
+    "readSeconds": 6,
+    "tags": [
+      "alignment"
+    ]
+  },
+  {
+    "id": "decisions-3",
+    "categoryId": "decisions",
+    "kind": "question",
+    "title": "The tiebreaker",
+    "body": "Your team is split 50/50 on a technical approach and you're the tiebreaker. What's the better move?",
+    "options": [
+      {
+        "label": "Decide based on your own past experience alone"
+      },
+      {
+        "label": "Set a deadline, get a one-page tradeoff writeup from each side against shared criteria, then decide",
+        "correct": true
+      },
+      {
+        "label": "Escalate to your manager"
+      },
+      {
+        "label": "Wait until the team reaches consensus"
+      }
+    ],
+    "explanation": "Forcing the tradeoffs onto paper against shared criteria makes the decision about the evidence, not about who argues loudest — and it keeps you from waiting indefinitely for consensus that may never come.",
+    "readSeconds": 18,
+    "tags": [
+      "tradeoffs"
+    ]
+  },
+  {
+    "id": "decisions-4",
+    "categoryId": "decisions",
+    "kind": "story",
+    "title": "Three weeks on a two-way door",
+    "body": "A team spent three weeks debating which analytics tool to adopt — a cheap, reversible choice — while a genuine one-way-door decision, a data model migration, got rushed through in two days. The cost was not the decisions, it was matching the wrong speed to each.",
+    "readSeconds": 18,
+    "tags": [
+      "speed",
+      "reversibility"
+    ]
+  },
+  {
+    "id": "decisions-5",
+    "categoryId": "decisions",
+    "kind": "challenge",
+    "title": "Ask how expensive it is to reverse",
+    "body": "Before your next contentious decision, write one sentence: 'If we're wrong, how expensive is it to undo?' Let the answer set how much time the decision deserves.",
+    "readSeconds": 12,
+    "tags": [
+      "speed"
+    ]
+  },
+  {
+    "id": "decisions-6",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Separate the decision from the decision-maker",
+    "body": "A good process run by the wrong person fails. A bad process run by the right person still fails. Make sure whoever owns the call is the person closest to living with its consequences.",
+    "readSeconds": 12,
+    "tags": [
+      "ownership"
+    ]
+  },
+  {
+    "id": "decisions-7",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Write the decision down",
+    "body": "One paragraph: the decision, the alternatives you considered, and why. It forces clarity in the moment and saves you from re-litigating it three months later.",
+    "readSeconds": 12,
+    "tags": [
+      "documentation"
+    ]
+  },
+  {
+    "id": "decisions-8",
+    "categoryId": "decisions",
+    "kind": "question",
+    "title": "No single owner",
+    "body": "A cross-functional project has no single owner, and decisions keep stalling while everyone waits for consensus. What is the fix?",
+    "options": [
+      {
+        "label": "Name a single decision-maker for the project, even if others stay consulted or informed",
+        "correct": true
+      },
+      {
+        "label": "Escalate every disagreement to leadership"
+      },
+      {
+        "label": "Put every decision to a team vote"
+      },
+      {
+        "label": "Let whoever raises an issue loudest decide it"
+      }
+    ],
+    "explanation": "Shared ownership across a group is usually no ownership at all. A single named decision-maker, with others clearly consulted or informed, is what actually unblocks stalled cross-functional calls.",
+    "readSeconds": 18,
+    "tags": [
+      "ownership",
+      "cross-functional"
+    ]
+  },
+  {
+    "id": "decisions-9",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Pre-mortem before you commit",
+    "body": "Before locking in a big call, spend ten minutes imagining it failed and writing down why. It surfaces risks that confidence quietly hides.",
+    "readSeconds": 10,
+    "tags": [
+      "risk"
+    ]
+  },
+  {
+    "id": "decisions-10",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Set the decision deadline before the debate",
+    "body": "Open-ended discussions expand to fill whatever time is available. A deadline, set in advance, forces the group toward a call instead of circling it.",
+    "readSeconds": 10,
+    "tags": [
+      "speed"
+    ]
+  },
+  {
+    "id": "decisions-11",
+    "categoryId": "decisions",
+    "kind": "story",
+    "title": "The decision that kept re-opening",
+    "body": "Every time someone new joined the team, they asked \"wait, why did we choose this?\" — and the debate restarted from zero, because nobody had written the reasoning down. A two-paragraph decision log would have saved months.",
+    "readSeconds": 16,
+    "tags": [
+      "documentation"
+    ]
+  },
+  {
+    "id": "decisions-12",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Beware the decision that feels unanimous",
+    "body": "If everyone agrees instantly, someone probably has not voiced a concern yet. Ask directly, \"what would make this wrong?\" before moving on.",
+    "readSeconds": 10,
+    "tags": [
+      "groupthink"
+    ]
+  },
+  {
+    "id": "decisions-13",
+    "categoryId": "decisions",
+    "kind": "challenge",
+    "title": "Put a date on a stuck decision",
+    "body": "Find one decision currently stuck in \"more discussion needed.\" Set a decision date for it this week, even if the analysis isn't complete.",
+    "readSeconds": 10,
+    "tags": [
+      "speed"
+    ]
+  },
+  {
+    "id": "decisions-14",
+    "categoryId": "decisions",
+    "kind": "question",
+    "title": "Six months invested, new information",
+    "body": "You've spent six months building an approach, and new information suggests it's wrong. The team feels invested. What actually matters here?",
+    "options": [
+      {
+        "label": "Finish it — you have already invested the time"
+      },
+      {
+        "label": "Evaluate the path forward fresh, as if starting today, ignoring what's already spent",
+        "correct": true
+      },
+      {
+        "label": "Compromise by building half of the original plan"
+      },
+      {
+        "label": "Figure out who originally chose this approach"
+      }
+    ],
+    "explanation": "The time already spent is gone either way — it cannot be recovered by finishing. The only thing that should drive the decision is which path is best starting from right now.",
+    "readSeconds": 18,
+    "tags": [
+      "sunk cost"
+    ]
+  },
+  {
+    "id": "decisions-15",
+    "categoryId": "decisions",
+    "kind": "tip",
+    "title": "Reversible calls deserve a bias toward action",
+    "body": "Waiting for perfect information on a two-way door often costs more than just trying the cheaper option and adjusting once you learn something.",
+    "readSeconds": 10,
+    "tags": [
+      "speed",
+      "reversibility"
+    ]
+  }
+]

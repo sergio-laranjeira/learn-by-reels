@@ -1,0 +1,201 @@
+[
+  {
+    "id": "strategy-1",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "Build around what won't change",
+    "body": "Customers will keep wanting things faster, cheaper, and simpler for as long as anyone can plan for. Anchor strategy to those constants instead of chasing every new trend.",
+    "readSeconds": 12,
+    "tags": [
+      "jeff bezos"
+    ]
+  },
+  {
+    "id": "strategy-2",
+    "categoryId": "strategy",
+    "kind": "quote",
+    "title": "Strategy without tactics",
+    "body": "Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.",
+    "author": "Sun Tzu",
+    "readSeconds": 10,
+    "tags": [
+      "execution"
+    ]
+  },
+  {
+    "id": "strategy-3",
+    "categoryId": "strategy",
+    "kind": "question",
+    "title": "A new competitive threat",
+    "body": "Your roadmap is fully committed for two quarters. A new competitive threat emerges. What is the strategic move?",
+    "options": [
+      {
+        "label": "Finish the current roadmap first, respond after"
+      },
+      {
+        "label": "Reopen the roadmap, quantify the threat, and decide what to cut to respond — do not just stack it on top",
+        "correct": true
+      },
+      {
+        "label": "Add the response as new work without cutting anything"
+      },
+      {
+        "label": "Wait for more data before deciding anything"
+      }
+    ],
+    "explanation": "Adding work without removing anything dilutes focus across the board and usually means every priority — old and new — ships late or half-done.",
+    "readSeconds": 18,
+    "tags": [
+      "prioritization"
+    ]
+  },
+  {
+    "id": "strategy-4",
+    "categoryId": "strategy",
+    "kind": "story",
+    "title": "Twelve priorities, nothing shipped well",
+    "body": "A company kept stacking new strategic bets on top of old ones without ever retiring anything, spreading the team across twelve priorities at once. Nothing shipped well. Strategy is as much about what you stop doing as what you start.",
+    "readSeconds": 16,
+    "tags": [
+      "focus"
+    ]
+  },
+  {
+    "id": "strategy-5",
+    "categoryId": "strategy",
+    "kind": "challenge",
+    "title": "Defend your top three",
+    "body": "List your team's current priorities. If it's more than three, pick which one you'd fight to keep if forced to cut down to three.",
+    "readSeconds": 10,
+    "tags": [
+      "focus"
+    ]
+  },
+  {
+    "id": "strategy-6",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "A napkin test for strategy",
+    "body": "If you can't explain your team's strategy in two sentences to someone outside it, it isn't a strategy yet — it's a wish list.",
+    "readSeconds": 10,
+    "tags": [
+      "clarity"
+    ]
+  },
+  {
+    "id": "strategy-7",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "Hold the goal firm, the plan loose",
+    "body": "Teams that treat the current plan as sacred miss the moment the environment has already changed. Hold the goal firmly; hold the plan loosely.",
+    "readSeconds": 10,
+    "tags": [
+      "adaptability"
+    ]
+  },
+  {
+    "id": "strategy-8",
+    "categoryId": "strategy",
+    "kind": "quote",
+    "title": "Choosing what not to do",
+    "body": "The essence of strategy is choosing what not to do.",
+    "author": "Michael Porter",
+    "readSeconds": 8,
+    "tags": [
+      "focus"
+    ]
+  },
+  {
+    "id": "strategy-9",
+    "categoryId": "strategy",
+    "kind": "challenge",
+    "title": "Name one thing to stop",
+    "body": "Write down one thing your team should explicitly stop doing this quarter to make real room for the top priority — not something already dead, something that will actually hurt to cut.",
+    "readSeconds": 12,
+    "tags": [
+      "focus"
+    ]
+  },
+  {
+    "id": "strategy-10",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "A strategy is a bet — say so",
+    "body": "Naming the assumption a plan depends on (\"this works if enterprise demand holds\") makes it easy to notice early when the bet stops paying off.",
+    "readSeconds": 10,
+    "tags": [
+      "assumptions"
+    ]
+  },
+  {
+    "id": "strategy-11",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "Don't confuse activity with strategy",
+    "body": "A packed roadmap can still have no strategy behind it, if nobody on the team can say what it is actually trying to win.",
+    "readSeconds": 10,
+    "tags": [
+      "clarity"
+    ]
+  },
+  {
+    "id": "strategy-12",
+    "categoryId": "strategy",
+    "kind": "story",
+    "title": "Hitting every sprint goal, losing the market",
+    "body": "A team hit every sprint goal for a year while the product slowly lost relevance to a shifting market. Velocity was never the problem — direction was, and nobody at the leadership level was watching for that.",
+    "readSeconds": 16,
+    "tags": [
+      "direction"
+    ]
+  },
+  {
+    "id": "strategy-13",
+    "categoryId": "strategy",
+    "kind": "challenge",
+    "title": "Ask what a competitor could actually exploit",
+    "body": "Ask your team: \"if a competitor got full access to our roadmap tomorrow, what would actually hurt us?\" If the honest answer is \"nothing,\" your differentiation is not where you think it is.",
+    "readSeconds": 12,
+    "tags": [
+      "differentiation"
+    ]
+  },
+  {
+    "id": "strategy-14",
+    "categoryId": "strategy",
+    "kind": "question",
+    "title": "An assumption starting to crack",
+    "body": "Your strategy depends on a trend that's showing early signs of reversing. What's the right response?",
+    "options": [
+      {
+        "label": "Wait for more certainty before reacting"
+      },
+      {
+        "label": "Name the assumption explicitly and set a trigger point for revisiting the strategy, now, before the data is conclusive",
+        "correct": true
+      },
+      {
+        "label": "Quietly hedge without telling the team"
+      },
+      {
+        "label": "Switch strategy immediately on the first signal"
+      }
+    ],
+    "explanation": "Deciding your trigger point in advance, while calm, produces better judgment than deciding under pressure once the trend has fully turned.",
+    "readSeconds": 18,
+    "tags": [
+      "adaptability"
+    ]
+  },
+  {
+    "id": "strategy-15",
+    "categoryId": "strategy",
+    "kind": "tip",
+    "title": "Revisit strategy on a cadence, not just in a crisis",
+    "body": "If the only time strategy gets re-examined is when something's on fire, you will always be reacting instead of adjusting early.",
+    "readSeconds": 10,
+    "tags": [
+      "cadence"
+    ]
+  }
+]

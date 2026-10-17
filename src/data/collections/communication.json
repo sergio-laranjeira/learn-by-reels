@@ -1,0 +1,210 @@
+[
+  {
+    "id": "communication-1",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Lead with the takeaway",
+    "body": "In status updates, put the conclusion in the first sentence, then the supporting detail. Busy stakeholders read the first line and skim the rest — bury the takeaway and it gets lost.",
+    "readSeconds": 12,
+    "tags": [
+      "writing",
+      "status updates"
+    ]
+  },
+  {
+    "id": "communication-2",
+    "categoryId": "communication",
+    "kind": "quote",
+    "title": "The illusion of communication",
+    "body": "The single biggest problem in communication is the illusion that it has taken place.",
+    "author": "George Bernard Shaw",
+    "readSeconds": 8,
+    "tags": [
+      "clarity"
+    ]
+  },
+  {
+    "id": "communication-3",
+    "categoryId": "communication",
+    "kind": "question",
+    "title": "The serial interrupter",
+    "body": "A senior engineer keeps talking over others in team meetings. What is the highest-leverage first move?",
+    "options": [
+      {
+        "label": "Call it out publicly in the next meeting"
+      },
+      {
+        "label": "Talk to them privately, describe the specific pattern, and ask what is driving it",
+        "correct": true
+      },
+      {
+        "label": "Restructure the meeting so they always present last"
+      },
+      {
+        "label": "Ignore it — it will resolve itself"
+      }
+    ],
+    "explanation": "A private, specific conversation preserves their dignity and usually surfaces the real cause (anxiety, habit, or not feeling heard) faster than a public correction or a structural workaround.",
+    "readSeconds": 20,
+    "tags": [
+      "meetings",
+      "feedback"
+    ]
+  },
+  {
+    "id": "communication-4",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Read it as your harshest critic",
+    "body": "Before sending critical feedback in writing, reread it imagining the recipient forwarding it to someone else. If that would embarrass you, it is not ready to send.",
+    "readSeconds": 12,
+    "tags": [
+      "feedback",
+      "writing"
+    ]
+  },
+  {
+    "id": "communication-5",
+    "categoryId": "communication",
+    "kind": "story",
+    "title": "The status report that hid the truth",
+    "body": "A team lead wrote \"tracking with minor risk\" for three weeks straight while a launch date quietly slipped. When it finally broke, leadership was angrier about the report than the delay. Ambiguity, under real stakes, reads as dishonesty.",
+    "readSeconds": 18,
+    "tags": [
+      "honesty",
+      "status updates"
+    ]
+  },
+  {
+    "id": "communication-6",
+    "categoryId": "communication",
+    "kind": "challenge",
+    "title": "Ask what you don't know",
+    "body": "In your next 1:1, ask one question you genuinely don't already know the answer to — then let the silence sit for five seconds before filling it.",
+    "readSeconds": 10,
+    "tags": [
+      "1:1s",
+      "listening"
+    ]
+  },
+  {
+    "id": "communication-7",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Match the channel to the message",
+    "body": "A correction or hard truth belongs in a call or in person, not Slack. Recognition can go in public; correction almost never should.",
+    "readSeconds": 10,
+    "tags": [
+      "channels",
+      "feedback"
+    ]
+  },
+  {
+    "id": "communication-8",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Silence is a tool, not a gap to fill",
+    "body": "In a debate-heavy meeting, waiting a beat before responding to a hot take gets you better information than jumping in immediately — and signals you actually heard it.",
+    "readSeconds": 10,
+    "tags": [
+      "meetings",
+      "listening"
+    ]
+  },
+  {
+    "id": "communication-9",
+    "categoryId": "communication",
+    "kind": "quote",
+    "title": "What isn't said",
+    "body": "The most important thing in communication is hearing what isn't said.",
+    "author": "Peter Drucker",
+    "readSeconds": 8,
+    "tags": [
+      "listening"
+    ]
+  },
+  {
+    "id": "communication-10",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Numbers need a comparison",
+    "body": "\"We shipped 40 features\" means nothing on its own. \"...versus 25 last quarter\" or \"...against a target of 50\" is what turns a number into information.",
+    "readSeconds": 10,
+    "tags": [
+      "metrics",
+      "reporting"
+    ]
+  },
+  {
+    "id": "communication-11",
+    "categoryId": "communication",
+    "kind": "story",
+    "title": "The update that trained people to stop reading",
+    "body": "A manager wrote \"tracking, no major updates\" in the weekly report for months. The one week everything actually fell apart, nobody had the context to help — they had all stopped reading. A boring update is still an update.",
+    "readSeconds": 16,
+    "tags": [
+      "status updates",
+      "trust"
+    ]
+  },
+  {
+    "id": "communication-12",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Write for the person who skims",
+    "body": "Bold the one sentence that actually matters and bullet the rest. Assume nobody reads past the first two lines unless those two lines have already earned it.",
+    "readSeconds": 10,
+    "tags": [
+      "writing"
+    ]
+  },
+  {
+    "id": "communication-13",
+    "categoryId": "communication",
+    "kind": "question",
+    "title": "A basic question, asked in public",
+    "body": "A junior engineer asks a question in a public Slack channel that reveals a gap in a basic concept. What is the best response?",
+    "options": [
+      {
+        "label": "Answer privately only, and leave the public message unanswered"
+      },
+      {
+        "label": "Answer plainly in the same public channel, with no comment on the knowledge gap",
+        "correct": true
+      },
+      {
+        "label": "\"Good question!\" in public, then DM the real answer"
+      },
+      {
+        "label": "Wait to see if someone else answers it"
+      }
+    ],
+    "explanation": "Answering plainly and publicly signals that no question is a dumb question — which is exactly what gets a team to keep asking things early, before they become expensive mistakes.",
+    "readSeconds": 18,
+    "tags": [
+      "psychological safety"
+    ]
+  },
+  {
+    "id": "communication-14",
+    "categoryId": "communication",
+    "kind": "challenge",
+    "title": "Explain a decision in two sentences",
+    "body": "Take a decision you made recently and explain it to someone outside your team in two sentences. If you can't, you understand it less well than you think.",
+    "readSeconds": 10,
+    "tags": [
+      "clarity"
+    ]
+  },
+  {
+    "id": "communication-15",
+    "categoryId": "communication",
+    "kind": "tip",
+    "title": "Calibrate your certainty language",
+    "body": "\"I think\" and \"I'm confident\" are not interchangeable. Using \"I'm sure\" for a guess costs you trust the first time you turn out to be wrong.",
+    "readSeconds": 10,
+    "tags": [
+      "credibility"
+    ]
+  }
+]

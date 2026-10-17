@@ -71,6 +71,21 @@ export default function FeedScreen({ categoryId, onClearCategory }: Props) {
 
   const category = categoryId ? getCategory(categoryId) : null;
 
+  if (feed.length === 0 && category) {
+    return (
+      <View style={[styles.container, styles.emptyState]}>
+        <Ionicons name={category.icon} size={40} color={category.color} />
+        <Text style={styles.emptyTitle}>{category.name}</Text>
+        <Text style={styles.emptyBody}>
+          No cards here yet — this collection is coming soon.
+        </Text>
+        <Pressable style={styles.emptyButton} onPress={onClearCategory}>
+          <Text style={styles.emptyButtonText}>Browse other collections</Text>
+        </Pressable>
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -133,6 +148,36 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   categoryHeaderText: {
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  emptyState: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 40,
+    gap: 10,
+  },
+  emptyTitle: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: '800',
+    marginTop: 8,
+  },
+  emptyBody: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 14,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
+  emptyButton: {
+    marginTop: 12,
+    backgroundColor: 'rgba(255,255,255,0.12)',
+    borderRadius: 999,
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  emptyButtonText: {
     color: '#fff',
     fontSize: 13,
     fontWeight: '700',

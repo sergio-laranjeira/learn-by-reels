@@ -1,0 +1,201 @@
+[
+  {
+    "id": "conflict-1",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Name the pattern, not the person",
+    "body": "\"This is the third time a deadline slipped without a heads-up\" lands better than \"you're unreliable.\" One is a fact about the situation; the other is an attack on identity.",
+    "readSeconds": 12,
+    "tags": [
+      "feedback"
+    ]
+  },
+  {
+    "id": "conflict-2",
+    "categoryId": "conflict",
+    "kind": "quote",
+    "title": "Thoughtful disagreement",
+    "body": "The greatest tragedy of mankind comes from the inability of people to have thoughtful disagreement to find out what is true.",
+    "author": "Ray Dalio",
+    "readSeconds": 10,
+    "tags": [
+      "disagreement"
+    ]
+  },
+  {
+    "id": "conflict-3",
+    "categoryId": "conflict",
+    "kind": "question",
+    "title": "The team split in two",
+    "body": "Two senior engineers have an ongoing technical disagreement that is splitting the team into camps. What is the highest-leverage move?",
+    "options": [
+      {
+        "label": "Make the call yourself and end the debate"
+      },
+      {
+        "label": "Get both in a room and have each restate the other's position before either can rebut it",
+        "correct": true
+      },
+      {
+        "label": "Avoid the topic in meetings going forward"
+      },
+      {
+        "label": "Move one of them to another team"
+      }
+    ],
+    "explanation": "Forcing each side to accurately restate the other's position first reveals whether this is a real disagreement or a misunderstanding — most 'unsolvable' conflicts are the latter.",
+    "readSeconds": 18,
+    "tags": [
+      "mediation"
+    ]
+  },
+  {
+    "id": "conflict-4",
+    "categoryId": "conflict",
+    "kind": "story",
+    "title": "The political conflict that wasn't",
+    "body": "Two peers escalated a fight about system ownership, each convinced the other was being political. A 20-minute conversation revealed they had separately agreed to different things with a third team weeks earlier. Most 'personality conflicts' are unresolved facts wearing a costume.",
+    "readSeconds": 18,
+    "tags": [
+      "ownership",
+      "miscommunication"
+    ]
+  },
+  {
+    "id": "conflict-5",
+    "categoryId": "conflict",
+    "kind": "challenge",
+    "title": "Book the conversation you're avoiding",
+    "body": "Identify the conflict you've been putting off this week. Book 30 minutes with that person before Friday.",
+    "readSeconds": 10,
+    "tags": [
+      "avoidance"
+    ]
+  },
+  {
+    "id": "conflict-6",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Solve it at the smallest scope possible",
+    "body": "A two-person disagreement solved in a team meeting embarrasses people and rarely beats what a direct, private conversation would have produced.",
+    "readSeconds": 10,
+    "tags": [
+      "scope"
+    ]
+  },
+  {
+    "id": "conflict-7",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Ask what they are optimizing for",
+    "body": "Most conflict is two reasonable people optimizing for different, unstated goals. Make the goals explicit and the disagreement often resolves itself.",
+    "readSeconds": 12,
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "id": "conflict-8",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Ask what would change their mind",
+    "body": "\"What would need to be true for you to see it differently?\" turns a positional fight into a search for missing information — and often reveals there was no real disagreement on the facts at all.",
+    "readSeconds": 12,
+    "tags": [
+      "mediation"
+    ]
+  },
+  {
+    "id": "conflict-9",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Address it within 24 hours of noticing it",
+    "body": "The longer you sit on a visible tension, the more both sides build a private story about the other — and the harder the real conversation gets.",
+    "readSeconds": 10,
+    "tags": [
+      "timing"
+    ]
+  },
+  {
+    "id": "conflict-10",
+    "categoryId": "conflict",
+    "kind": "story",
+    "title": "The conflict routed through the manager",
+    "body": "Two leads stopped speaking directly and started routing every disagreement through their shared manager, who became a bottleneck for things that should have taken five minutes. Unresolved conflict does not disappear — it finds the most expensive path available.",
+    "readSeconds": 16,
+    "tags": [
+      "escalation"
+    ]
+  },
+  {
+    "id": "conflict-11",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Separate the what from the how",
+    "body": "Two people can fully agree on the goal and still fight hard over the approach. Naming the shared goal first lowers the temperature before tackling the real disagreement.",
+    "readSeconds": 10,
+    "tags": [
+      "alignment"
+    ]
+  },
+  {
+    "id": "conflict-12",
+    "categoryId": "conflict",
+    "kind": "challenge",
+    "title": "Name your own defensiveness out loud",
+    "body": "Next time you feel defensive mid-conversation, say it out loud: \"I notice I'm getting defensive — let me actually hear this.\" It resets the conversation more than you'd expect.",
+    "readSeconds": 10,
+    "tags": [
+      "self-awareness"
+    ]
+  },
+  {
+    "id": "conflict-13",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "Apologize for the impact, not just the intent",
+    "body": "\"I didn't mean it that way\" defends you. \"I can see how that landed badly, I'm sorry\" repairs the relationship. Only one of those is actually an apology.",
+    "readSeconds": 10,
+    "tags": [
+      "repair"
+    ]
+  },
+  {
+    "id": "conflict-14",
+    "categoryId": "conflict",
+    "kind": "question",
+    "title": "A disagreement about to go external",
+    "body": "An internal disagreement is about to spill into a meeting with a client or executive. What's the move?",
+    "options": [
+      {
+        "label": "Hash it out openly in front of them — transparency is good"
+      },
+      {
+        "label": "Agree beforehand to present a united front, and resolve the disagreement separately afterward",
+        "correct": true
+      },
+      {
+        "label": "Let whoever is more senior decide on the spot"
+      },
+      {
+        "label": "Avoid the meeting until it is resolved"
+      }
+    ],
+    "explanation": "A visible internal split in front of outside stakeholders damages trust far more than taking one more day to resolve the disagreement privately would cost.",
+    "readSeconds": 18,
+    "tags": [
+      "stakeholders"
+    ]
+  },
+  {
+    "id": "conflict-15",
+    "categoryId": "conflict",
+    "kind": "tip",
+    "title": "An escalation is usually a request for a decision",
+    "body": "When someone escalates, they usually want a decision made at a higher level — not sympathy. Treat it as a decision request and the interaction gets much shorter.",
+    "readSeconds": 10,
+    "tags": [
+      "escalation"
+    ]
+  }
+]

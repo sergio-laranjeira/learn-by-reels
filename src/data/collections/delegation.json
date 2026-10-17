@@ -1,0 +1,205 @@
+[
+  {
+    "id": "delegation-1",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Delegate the outcome, not the method",
+    "body": "Tell people what \"done\" looks like and by when, then let them choose how to get there. Prescribing every step turns skilled people into order-takers.",
+    "readSeconds": 12,
+    "tags": [
+      "ownership"
+    ]
+  },
+  {
+    "id": "delegation-2",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Grove's rule of manager output",
+    "body": "Andy Grove's core idea in High Output Management: a manager's output is not their personal work, it is the output of the team and the neighboring teams they influence. Optimize for that number, not your own to-do list.",
+    "readSeconds": 14,
+    "tags": [
+      "management",
+      "andy grove"
+    ]
+  },
+  {
+    "id": "delegation-3",
+    "categoryId": "delegation",
+    "kind": "question",
+    "title": "The drifted handoff",
+    "body": "You handed off a project last month. The result has drifted from the approach you would have taken. What now?",
+    "options": [
+      {
+        "label": "Take it back and redo it your way"
+      },
+      {
+        "label": "Judge it against whether it meets the actual goal, not your original method",
+        "correct": true
+      },
+      {
+        "label": "Correct the approach in front of the team"
+      },
+      {
+        "label": "Say nothing and hope it works out"
+      }
+    ],
+    "explanation": "Delegation means giving up the method along with the task. If the outcome meets the goal, a different path is a feature of delegation, not a bug.",
+    "readSeconds": 18,
+    "tags": [
+      "ownership",
+      "trust"
+    ]
+  },
+  {
+    "id": "delegation-4",
+    "categoryId": "delegation",
+    "kind": "story",
+    "title": "The reversed decision",
+    "body": "A manager let their lead decide the launch date, then overturned it in a public channel two days later. Within a month, every decision — however small — was routed back to the manager for approval. Reversing a delegated call in public costs more than a slightly worse decision ever would.",
+    "readSeconds": 18,
+    "tags": [
+      "trust",
+      "decisions"
+    ]
+  },
+  {
+    "id": "delegation-5",
+    "categoryId": "delegation",
+    "kind": "challenge",
+    "title": "Hand off one thing",
+    "body": "Pick one recurring task that only you currently do. Write down the decision criteria you use for it, and hand the task to someone else this week.",
+    "readSeconds": 12,
+    "tags": [
+      "delegation"
+    ]
+  },
+  {
+    "id": "delegation-6",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Trust is a loop, not a leap",
+    "body": "Start with a small delegation, give honest feedback on how it went, then widen the scope. Handing over something huge with no track record sets both of you up to fail.",
+    "readSeconds": 12,
+    "tags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "delegation-7",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Ask what they need before you ask why",
+    "body": "Before asking 'why isn't this done,' ask 'what do you need from me?' Most delegation failures are missing context or a blocked dependency, not a lack of effort.",
+    "readSeconds": 12,
+    "tags": [
+      "support",
+      "blockers"
+    ]
+  },
+  {
+    "id": "delegation-8",
+    "categoryId": "delegation",
+    "kind": "challenge",
+    "title": "Write a one-page delegation brief",
+    "body": "For the next thing you hand off, write one page: the goal, the constraints, who has decision rights, and the check-in cadence. No more than that — the rest is theirs to figure out.",
+    "readSeconds": 12,
+    "tags": [
+      "delegation"
+    ]
+  },
+  {
+    "id": "delegation-9",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Delegate the whole problem, not the leftover 80%",
+    "body": "Keeping the interesting 20% — the key design call, the stakeholder conversation — and handing off only the execution is not delegation, it is outsourcing busywork. And it caps how much the other person can grow.",
+    "readSeconds": 12,
+    "tags": [
+      "ownership",
+      "growth"
+    ]
+  },
+  {
+    "id": "delegation-10",
+    "categoryId": "delegation",
+    "kind": "story",
+    "title": "The handoff that was never really handed off",
+    "body": "A manager delegated a project but stayed cc'd on every thread and jumped into decisions. The person stopped deciding anything — they just forwarded things up. Visible hovering undoes a delegation faster than any words ever could.",
+    "readSeconds": 16,
+    "tags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "delegation-11",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Match the ask to their next level, not your comfort",
+    "body": "Delegating slightly past someone's current ability — with support available — builds capability faster than delegating safely within it.",
+    "readSeconds": 10,
+    "tags": [
+      "growth"
+    ]
+  },
+  {
+    "id": "delegation-12",
+    "categoryId": "delegation",
+    "kind": "question",
+    "title": "Stuck and silent",
+    "body": "You delegated a task to someone who's now stuck and hasn't asked for help in several days. What's the first move?",
+    "options": [
+      {
+        "label": "Wait longer — they will figure it out"
+      },
+      {
+        "label": "Check in directly and ask where they're stuck, without taking the task back yet",
+        "correct": true
+      },
+      {
+        "label": "Quietly reassign it to someone else"
+      },
+      {
+        "label": "Escalate to their skip-level manager"
+      }
+    ],
+    "explanation": "Most people under-ask for help far more than they over-ask. A direct, low-stakes check-in usually unblocks the work without undermining their ownership of it.",
+    "readSeconds": 18,
+    "tags": [
+      "support"
+    ]
+  },
+  {
+    "id": "delegation-13",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "Give away the credit before you give away the task",
+    "body": "Publicly naming who now owns something, and why you trust them with it, makes the handoff real to the rest of the team — not just to the person receiving it.",
+    "readSeconds": 10,
+    "tags": [
+      "trust",
+      "visibility"
+    ]
+  },
+  {
+    "id": "delegation-14",
+    "categoryId": "delegation",
+    "kind": "challenge",
+    "title": "Hand over a decision you're still making for someone",
+    "body": "Identify a decision you keep making for someone who's actually ready to make it themselves. Tell them explicitly: \"this one's yours now.\"",
+    "readSeconds": 10,
+    "tags": [
+      "ownership"
+    ]
+  },
+  {
+    "id": "delegation-15",
+    "categoryId": "delegation",
+    "kind": "tip",
+    "title": "A delegation without a deadline is a suggestion",
+    "body": "Pair every handoff with a specific check-in date, or it will quietly slip to the bottom of both your priority lists.",
+    "readSeconds": 10,
+    "tags": [
+      "follow-through"
+    ]
+  }
+]

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ScrollView, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useProgress } from '../state/progress';
 import { getCategories, getReelsForCategory } from '../data/contentSource';
 import { COLLECTION_CAPACITY } from '../data/categories';
 import { Category } from '../types/content';
+import { downloadCollectionJson } from '../utils/downloadCollection';
 
 const GRID_COLUMNS = 10;
 
@@ -99,6 +100,19 @@ function CollectionDetail({
   const reels = getReelsForCategory(category.id);
   const collectedCount = reels.filter((r) => isCollected(r.id)).length;
   const slots = Array.from({ length: COLLECTION_CAPACITY }, (_, i) => reels[i] ?? null);
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    if (reels.length === 0 || downloading) return;
+    setDownloading(true);
+    try {
+      await downloadCollectionJson(category, reels);
+    } catch {
+      Alert.alert('Download failed', 'Could not export this collection. Please try again.');
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -112,6 +126,19 @@ function CollectionDetail({
             {collectedCount}/{COLLECTION_CAPACITY} collected · {reels.length} in this set so far
           </Text>
         </View>
+        <Pressable
+          onPress={handleDownload}
+          disabled={reels.length === 0 || downloading}
+          hitSlop={10}
+          style={[styles.downloadButton, reels.length === 0 && styles.downloadButtonDisabled]}
+        >
+          <Ionicons
+            name={downloading ? 'ellipsis-horizontal' : 'download-outline'}
+            size={16}
+            color="#fff"
+          />
+          <Text style={styles.downloadButtonText}>JSON</Text>
+        </Pressable>
       </View>
       <ScrollView contentContainerStyle={styles.gridScrollContent}>
         <View style={styles.grid}>
@@ -246,6 +273,23 @@ const styles = StyleSheet.create({
   },
   detailHeaderText: {
     flex: 1,
+  },
+  downloadButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: 'rgba(255,255,255,0.12)',
+    borderRadius: 999,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+  },
+  downloadButtonDisabled: {
+    opacity: 0.35,
+  },
+  downloadButtonText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '700',
   },
   gridScrollContent: {
     padding: 16,

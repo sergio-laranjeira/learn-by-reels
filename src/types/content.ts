@@ -17,6 +17,8 @@ export function getRarity(kind: ReelKind): Rarity {
   return RARITY_BY_KIND[kind];
 }
 
+export type CategoryGroup = 'topic' | 'format' | 'internal';
+
 export interface Category {
   id: string;
   name: string;
@@ -24,6 +26,10 @@ export interface Category {
   color: string;
   colorDark: string;
   icon: keyof typeof import('@expo/vector-icons').Ionicons.glyphMap;
+  // 'topic' = a leadership subject (Communication, Delegation, ...),
+  // 'format' = grouped by where the learning comes from (Books, Forums, ...),
+  // 'internal' = sourced from within Doctolib itself.
+  group: CategoryGroup;
 }
 
 export interface QuizOption {

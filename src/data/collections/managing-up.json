@@ -1,0 +1,201 @@
+[
+  {
+    "id": "managing-up-1",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Bring a recommendation, not just a problem",
+    "body": "\"Here are three options and I'd pick B, here's why\" gets a faster yes and builds more trust than \"what should we do?\"",
+    "readSeconds": 10,
+    "tags": [
+      "influence"
+    ]
+  },
+  {
+    "id": "managing-up-2",
+    "categoryId": "managing-up",
+    "kind": "quote",
+    "title": "Great simplifiers",
+    "body": "Great leaders are almost always great simplifiers.",
+    "author": "Colin Powell",
+    "readSeconds": 6,
+    "tags": [
+      "clarity"
+    ]
+  },
+  {
+    "id": "managing-up-3",
+    "categoryId": "managing-up",
+    "kind": "question",
+    "title": "Disagreeing with your manager in the room",
+    "body": "Your manager makes a decision in front of the team that you think is wrong. What is the best move?",
+    "options": [
+      {
+        "label": "Push back immediately, in the room"
+      },
+      {
+        "label": "Support it in the room, then raise your disagreement privately afterward",
+        "correct": true
+      },
+      {
+        "label": "Say nothing about it, ever"
+      },
+      {
+        "label": "Go around them to their manager"
+      }
+    ],
+    "explanation": "Undermining a decision publicly damages trust on both sides even when you turn out to be right. Raise it privately, and quickly.",
+    "readSeconds": 18,
+    "tags": [
+      "managing up"
+    ]
+  },
+  {
+    "id": "managing-up-4",
+    "categoryId": "managing-up",
+    "kind": "story",
+    "title": "Alignment that quietly eroded",
+    "body": "A skip-level conversation revealed that a peer team had been deprioritized by the same exec sponsor everyone assumed was fully bought in — an alignment nobody had rechecked in six months. Alignment decays; it has to be re-verified, not assumed.",
+    "readSeconds": 16,
+    "tags": [
+      "alignment"
+    ]
+  },
+  {
+    "id": "managing-up-5",
+    "categoryId": "managing-up",
+    "kind": "challenge",
+    "title": "Check a priority you're guessing at",
+    "body": "Identify one stakeholder whose priorities you're assuming rather than actually know. Schedule 20 minutes with them this week.",
+    "readSeconds": 10,
+    "tags": [
+      "stakeholders"
+    ]
+  },
+  {
+    "id": "managing-up-6",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Translate your work into their metrics",
+    "body": "An executive sponsor does not need your architecture diagram — they need to know how this moves the number they are accountable for.",
+    "readSeconds": 10,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "id": "managing-up-7",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Over-communicate risk, under-commit on dates",
+    "body": "Flag a risk before it's confirmed so there are no surprises later. Don't promise a date you're not sure of just to sound confident in the room.",
+    "readSeconds": 10,
+    "tags": [
+      "risk"
+    ]
+  },
+  {
+    "id": "managing-up-8",
+    "categoryId": "managing-up",
+    "kind": "story",
+    "title": "Silence is not buy-in",
+    "body": "A manager assumed an exec sponsor was fully aligned because they raised no objections in the kickoff — and got blindsided by pushback at the quarterly review. Absence of pushback in a meeting is not confirmation; ask for it explicitly.",
+    "readSeconds": 16,
+    "tags": [
+      "alignment",
+      "stakeholders"
+    ]
+  },
+  {
+    "id": "managing-up-9",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Ask how they prefer to receive bad news",
+    "body": "Some managers want it immediately and raw; others want a beat to process, with a proposed next step attached. Guessing wrong costs trust either way.",
+    "readSeconds": 10,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "id": "managing-up-10",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Give the one-line answer before the context",
+    "body": "A busy executive sponsor wants the bottom line first and the reasoning only if they ask for it. Leading with background reads as stalling.",
+    "readSeconds": 10,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "id": "managing-up-11",
+    "categoryId": "managing-up",
+    "kind": "story",
+    "title": "Hearing it from the skip-level first",
+    "body": "A manager learned from a skip-level that their own manager had been quietly fielding complaints about the team for months — nobody wanted to be the one to say it directly. Ask often what's being said about your team when you're not in the room.",
+    "readSeconds": 16,
+    "tags": [
+      "feedback"
+    ]
+  },
+  {
+    "id": "managing-up-12",
+    "categoryId": "managing-up",
+    "kind": "challenge",
+    "title": "Ask what would make their job easier",
+    "body": "Ask your manager this week: \"what's the one thing that would make your job easier right now?\" Then go do it.",
+    "readSeconds": 10,
+    "tags": [
+      "managing up"
+    ]
+  },
+  {
+    "id": "managing-up-13",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Credit visibly, raise concerns privately",
+    "body": "The reverse of how most people default — and it is what actually builds trust upward over time.",
+    "readSeconds": 8,
+    "tags": [
+      "trust"
+    ]
+  },
+  {
+    "id": "managing-up-14",
+    "categoryId": "managing-up",
+    "kind": "question",
+    "title": "A disagreement with an adjacent team",
+    "body": "You disagree with a decision an adjacent team's lead made that affects your roadmap. What's the best first move?",
+    "options": [
+      {
+        "label": "Escalate to both managers immediately"
+      },
+      {
+        "label": "Go directly to that lead first, assuming good intent, before looping in anyone above either of you",
+        "correct": true
+      },
+      {
+        "label": "Work around the decision without saying anything"
+      },
+      {
+        "label": "Raise it in a large cross-team meeting"
+      }
+    ],
+    "explanation": "Escalating before attempting a direct conversation reads as going over someone's head — and the disagreement is often resolvable with context neither side had yet.",
+    "readSeconds": 18,
+    "tags": [
+      "cross-functional"
+    ]
+  },
+  {
+    "id": "managing-up-15",
+    "categoryId": "managing-up",
+    "kind": "tip",
+    "title": "Show your work when you ask for resources",
+    "body": "\"I need two more engineers\" lands far weaker than \"here's what we can and can't deliver at current headcount, and here's the tradeoff at plus two.\"",
+    "readSeconds": 10,
+    "tags": [
+      "resourcing"
+    ]
+  }
+]
